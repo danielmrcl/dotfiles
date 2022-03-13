@@ -1,0 +1,54 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
+general {
+        colors = true
+        interval = 1
+}
+
+order += "read_file PLAYER"
+order += "disk /"
+order += "disk /home/prospect/Documents"
+order += "cpu_usage"
+order += "memory"
+order += "volume master"
+order += "tztime local"
+
+disk "/" {
+        format = "👻 NVME %used"
+}
+
+disk "/home/prospect/Documents" {
+        format = "HDD %used"
+}
+
+cpu_usage {
+	format = "CPU %usage"
+}
+
+memory {
+        format = "MEM %used"
+        threshold_degraded = "1G"
+        format_degraded = "MEMORY < %available"
+}
+
+tztime local {
+        format = "%Y-%m-%d %H:%M:%S"
+}
+
+volume master {
+        format = "🔊%volume"
+        format_muted = "♪: muted (%volume)"
+        device = "default"
+        mixer = "Master"
+        mixer_idx = 0
+}
+
+read_file PLAYER {
+	path = "/tmp/player_status"
+}

@@ -1,0 +1,59 @@
+URxvt.scrollBar: false
+URxvt*scrollTtyKeypress: true
+URxvt.font: xft:Roboto Mono:size=14
+URxvt*background: #0f0f0f
+URxvt*foreground: #DCDCDC
+URxvt.internalBorder: 15 
+URxvt.depth: 32
+URxvt.background: [80]#000000
+URxvt.cursorBlink: true
+
+Xcursor.theme: macOSBigSur 
+
+rofi.color-enabled: true
+rofi.color-window: argb:80000000, argb:80000000, #ff0000
+rofi.color-normal: argb:00000000, #ea1646, argb:00000000, #ea1646, #000000
+rofi.color-active: argb:00000000, #00ff00, argb:00000000, #16ea46, #000000
+rofi.color-urgent: argb:00000000, #268bd2, argb:00000000, #ce24ce, #000000
+
+!
+*.foreground:  #f8f8f2
+*.background:  #212121
+*.cursorColor: #eceff4
+!
+! Black
+*.color0:      #21222c
+*.color8:      #545454
+!
+! Red
+*.color1:      #ff5555
+*.color9:      #ff6e6e
+!
+! Green
+*.color2:      #50fa7b
+*.color10:     #69ff94
+!
+! Yellow
+*.color3:      #ffcb6b
+*.color11:     #ffcb6b
+!
+! Blue
+*.color4:      #82aaff
+*.color12:     #d6acff
+!
+! Magenta
+*.color5:      #c792ea
+*.color13:     #ff92df
+!
+! Cyan
+*.color6:      #8be9fd
+*.color14:     #a4ffff
+!
+! White
+*.color7:      #f8f8f2
+*.color15:     #f8f8f2
+!
+! Bold, Italic, Underline
+*.colorBD:     #ffffff
+!*.colorIT:
+!*.colorUL:
